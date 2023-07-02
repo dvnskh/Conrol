@@ -9,22 +9,22 @@
     }
     }
 
-    string [] arrayThreeSymbols = new string [count]; //в новом массиве заполним элементами кторые меньше либо равны 3
-    for (int i = 0,j=0;  i <array.Length; i++)//заполним массив этими символами
+    string [] arrayThreeSymbols = new string [count]; 
+    for (int i = 0,j=0;  i <array.Length; i++)
     {
-        string symbols= array[i];//найденные символы прикрутим к новой переменной 
+        string symbols= array[i];
         if (array[i].Length<=3)
         {
-        arrayThreeSymbols[j]=symbols;//заполнл новую переменную
+        arrayThreeSymbols[j]=symbols;
         j++;
         }
-    }return arrayThreeSymbols;//вернул значение
+    }return arrayThreeSymbols;
   }
 void PrintArray(string[] arr, string v) 
 {
     for (int i = 0; i < arr.Length; i++)
     {
-        if (i < arr.Length ) Console.Write($"{arr[i]}{v}"); //распечатал 
+        if (i < arr.Length ) Console.Write($"{arr[i]}{v}"); 
     }  
 }
 
